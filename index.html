@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>UI kit</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="plugins/chosen/chosen.css">
+  
+</head>
+<body>
+	<div class="container">
+  <h1>Сетка</h1>
+		<div class="row ">
+        
+			<div class="col-1"><div class="grid-color"></div></div>
+			<div class="col-1"><div class="grid-color"></div></div>
+			<div class="col-1"><div class="grid-color"></div></div>
+      <div class="col-1"><div class="grid-color"></div></div>
+      <div class="col-1"><div class="grid-color"></div></div>
+      <div class="col-1"><div class="grid-color"></div></div>
+      <div class="col-1"><div class="grid-color"></div></div>
+      <div class="col-1"><div class="grid-color"></div></div>
+      <div class="col-1"><div class="grid-color"></div></div>
+      <div class="col-1"><div class="grid-color"></div></div>
+      <div class="col-1"><div class="grid-color"></div></div>
+      <div class="col-1"><div class="grid-color"></div></div>
+		</div>	
+		<h1>Типографика</h1>
+		<div class="row">
+			<div class="col-6">
+			<h2>Почему непредсказуемо легато?</h2>
+			<h3>Почему непредсказуемо легато?</h3>
+			<h4>Почему непредсказуемо легато?</h4>
+			<h5>Почему непредсказуемо легато?</h5>
+			</div>
+			<div class="col-6" style="margin-top:20px">
+			<p>Первая производная, общеизвестно, изменяет тригонометрический звукосниматель, что известно даже школьникам. Определитель системы линейных уравнений многопланово нейтрализует интеграл от функции, обращающейся в бесконечность вдоль линии, благодаря быстрой смене тембров (каждый инструмент играет минимум звуков).</p>
+			<p><a href="#">Ссылка</a></p>
+			</div>
+		</div>
+
+
+
+    <!-- КНОПКИ -->
+        <h1>Кнопки</h1>
+        <div class="row">
+            <div class="col-2"><a class="btn btn--default" href="#" role="button" >Кнопка</a></div>
+            <div class="col-2"><button class="btn btn--grey" type="submit">Кнопка</button></div>
+            <div class="col-2"><input class="btn btn--orange" type="submit" value="Кнопка"></div>
+            <div class="col-2"><a class="btn btn--default btn--small" href="#" role="button">Кнопка</a></div>
+            <div class="col-2"><button class="btn btn--grey btn--small" type="submit">Кнопка</button></div>
+            <div class="col-2"><input class="btn btn--orange btn--small" type="submit" value="Кнопка"></div>
+        </div>
+
+
+<!-- КАРТИНКИ -->
+        <h1>Картинки</h1>   
+        <div class="row">
+            <div class="col-3"><img src="img/img-1.jpg" height="258" width="258" class="img img-rounded img--small" alt=""/></div>
+            <div class="col-3"><a class="zoom-image" href="#"><img src="img/img-1.jpg" height="258" width="258" class="img img-rounded img--small" alt=""/></a></div>            
+            <div class="col-3">
+             <figure class="image-caption">
+                <img src="img/img-1.jpg" height="258" width="258" class="img img-rounded img--small" alt=""/>
+                <figcaption class="image-caption__text">Всплывашечка с подписью поверх фотографии</figcaption>
+             </figure>             
+            </div>
+            
+
+            <div class="col-3" id="f1_container">
+              <div id="f1_card">
+            <div class="front face">
+              <img src="img/img-1.jpg" height="258" width="258"/>
+            </div>
+
+            <div class="back face">
+              <p>При наведении фотография разворачивается, и на другой стороне оказывается текст</p>
+            </div>
+            </div>
+
+        </div>
+
+
+        </div>
+
+        <h1>Формы</h1>
+        <div class="row">
+
+          <div class="col-4">
+           <form action="#" class="block block--rounded ">
+             <div class="form-group"><input type="text" disabled class="form-control" value="Полковнику никто не пишет"></div>
+             <div class="form-group"><input type="text" class="form-control" value="Пишет!"></div>
+             <div class="form-group has-feedback has-error"><input type="text" class="form-control" value="Но не то"></div>
+             <div class="form-group has-feedback has-success"><input type="text" class="form-control" value="А, нет, все правильно"></div>
+           </form>
+          </div>
+          <div class="col-4">
+            <form action="#" class="block block--rounded">
+              <div class="form-group">
+              <select name="multi_select" multiple  id="multi_select" class="form-control-select">
+                <option value="1">Один</option>
+                <option value="2">Два</option>
+                <option value="3">Три</option>
+                <option value="4">Четыре</option>
+                <option value="5">Пять</option>
+              </select>
+              </div>
+              <div class="form-group">
+              <select name="single_select" id="single_select" class="form-control-select">
+                <option value="1">Пункт 1</option>
+                <option value="2">Пункт 2</option>
+                <option value="3">Пункт 3</option>
+                <option value="4">Пункт 4</option>
+              </select>
+            </div>
+            </form>
+          </div>
+
+
+
+          <div class="col-4">
+            <form action="#" class="block block--rounded">
+            <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <input type="radio" disabled class="form-radio" name="field" id="option1">
+                    <label for="option1">Неактивно</label>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="checkbox" class="form-checkbox" name="field4" id="option4">
+                  <label for="option4">Отмечено</label>
+                  </div>
+
+                <div class="form-group">
+                <input type="radio" class="form-radio" name="field2" id="option2">
+                <label for="option2">Активно</label>
+                </div>
+                </div>
+
+                  <div class="col-6">
+                  <div class="form-group">
+                    <input type="radio" disabled class="form-radio" name="field" id="option1">
+                    <label for="option1">Неактивно</label>
+                  </div>
+
+                  <div class="form-group">
+                  <input type="checkbox" class="form-checkbox" name="field4" id="option4">
+                  <label for="option4">Отмечено</label>
+                  </div>
+
+                <div class="form-group">
+                <input type="radio" class="form-radio" name="field2" id="option2">
+                <label for="option2">Активно</label>
+                </div>
+              </div>    
+            </div>
+          </form>
+        </div><!-- col-4 -->
+      </div><!-- row -->
+
+        <!-- ИНТЕРАКТИВ -->
+
+        <h1>Интерактив</h1>
+        <div class="row">
+          <div class="col-6">
+            <div id="owl-demo" class="owl-carousel owl-theme"> 
+              <div class="item"><img src="img/img.jpg" height="340" width="552" alt=""></div>
+              <div class="item"><img src="img/img.jpg" alt=""></div>
+              <div class="item"><img src="img/img.jpg" height="340" width="552" alt=""></div>
+            </div>
+          </div>
+             <div class="col-6">
+                <div class="block block--rounded block--inline">
+                <div class="tooltip-wrapper">
+                <a class="tooltip" href="#">Любить значит страдать?
+                <span>Положение сложное, Соня</span></a>
+                </div>
+                </div>
+            <div class="block block--rounded">
+              <div id="tabs" class="tabs">
+                <ul>
+                  <li><a href="#tabs-1">Таб 1</a></li>
+                  <li><a href="#tabs-2">Таб 2</a></li>
+                  <li><a href="#tabs-3">Таб 3</a></li>
+                  <li><a href="#tabs-4">Таб 4</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <p>Первый таб</p>
+                </div>
+                <div id="tabs-2">
+                  <p>Второй таб</p>
+                </div>
+                <div id="tabs-3">
+                  <p>Третий таб</p>                
+                </div>
+                <div id="tabs-4">
+                  <p>Четвертый таб</p>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <h1>Продвинутые формы</h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="block block--rounded">              
+              <ol class="progress-stepper">
+                <li class="progress-done"> 
+                  <span class="step-name">Шаг 1</span>
+                </li>
+                <li class="progress-done">    
+                  <span class="step-name">Шаг 2</span>
+                </li>
+                <li>        
+                  <span class="step-name">Шаг 3</span>
+                </li>               
+              </ol>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="block block--rounded slider">
+              <span id="left-value" class="slider-value slider-value__left"></span>
+              <span id="right-value" class="slider-value slider-value__right"></span>              
+              <div id="slider-range"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="block block--rounded">
+              <div class="progress-wrap">
+                <div class="progress-wrap__value progress-wrap__value--center">90%</div>
+                <div class="progress">                
+                  <div class="progress-bar" 
+                    role="progressbar" 
+                    aria-valuenow="90" 
+                    aria-valuemin="0" 
+                    aria-valuemax="100" 
+                    style="width: 90%;">     
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-4">
+            <div class="block block--rounded">
+              <div class="switcher swither--select">
+              <span class="switcher-variant selected">Выбрано</span>
+              <span class="switcher-variant">Не выбрано</span></div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+<!-- ДОПОЛНИТЕЛЬНО -->
+        <h1>Дополнительно</h1>
+        <div class="row">
+          <div class="col-3">
+              <nav class="message-nav" id="mes">
+                <div class="message-nav__title" >Входящие сообщения</div>
+
+                <ul class="message-nav__list" id="mes">
+                  <li class="message-nav__item message-nav__item--new">
+                    <span class="badge">32</span>
+                    Новые
+                    <ul class="message-nav__sublist">
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">1</span><a href="">Новое1</a></li>
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">2</span><a href="">Новое2</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="message-nav__item message-nav__item--important">
+                    <span class="badge">6</span>Важные
+                    <ul class="message-nav__sublist">
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">1</span><a href="">Важное1</a></li>
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">2</span><a href="">Важное2</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="message-nav__item message-nav__item--work"><span class="badge">4</span>Работа
+                    <ul class="message-nav__sublist">
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">1</span><a href="">Работа1</a></li>
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">2</span><a href="">Работа2</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="message-nav__item message-nav__item--spam">
+                    <span class="badge"></span>Спам
+                    <ul class="message-nav__sublist">
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">1</span><a href="">Спам1</a></li>
+                      <li class="message-nav__subitem"><span class="badge badge-transparent">2</span><a href="">Спам2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+                <div class="message-nav__bottom"><a href="#">Показать все</a></div>
+
+              </nav> 
+          </div>
+
+
+
+          <div class="col-5">
+            <div class="block--rounded">
+              <ol class="breadcrumb">
+                <li><a href="#">Чем дальше в лес</a></li>
+                <li><a href="#">Тем больше</a></li>
+                <li class="active">Дров</li>
+              </ol>
+            </div>        
+          </div>
+
+
+
+          <div class="col-3">
+            <div class="block block--rounded">              
+              <div class="star-rating">
+                <label for="whatever">Оцените:</label> 
+                <span class="star star-active" data-rating="1"></span>
+                <span class="star star-active" data-rating="2"></span>
+                <span class="star star-active" data-rating="3"></span>
+                <span class="star star-active" data-rating="4"></span>
+                <span class="star" data-rating="5"></span>
+                <input type="hidden" name="whatever" id="whatever" class="rating-value" value="3">
+              </div>
+            </div>
+          </div>
+        </div>        
+	</div>
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    if (!window.jQuery) {
+        document.write('<script src="js/jquery-1.11.1.min.js"><\/script>');
+    }
+  </script>
+
+
+
+<script>
+  $(document).ready(function(){
+  $('#mes ul > li ul')
+    .click(function(event){
+      event.stopPropagation();
+    })
+    .filter(':not(:first)')
+    .hide();
+    
+  $('#mes ul > li').click(function(){
+    var selfClick = $(this).find('ul:first').is(':visible');
+    if(selfClick) {
+      return;
+    }
+    $(this)
+      .parent()
+      .find('> li ul:visible')
+      .slideToggle();
+    
+    $(this)
+      .find('ul:first')
+      .stop(true, true)
+      .slideToggle();
+  });
+});
+</script>
+
+
+
+  <script src="js/jquery-ui-1.11.3.min.js"></script>
+  <script src="plugins/chosen/chosen.jquery.min.js"></script>
+  <script src="plugins/owl/owl.carousel.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

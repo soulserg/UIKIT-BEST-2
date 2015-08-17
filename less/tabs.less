@@ -1,0 +1,49 @@
+.tabs{
+  border: none;
+  background: transparent;
+  font-family:@font-family-base;
+  & .ui-widget-header {
+    border-color: @tabs-border-color;
+    border-width: 0 0 1px 0;   
+    border-radius: 0;
+    background: transparent;
+    color: @font-color;
+    font-weight: normal;
+    padding: 0;
+
+    & .ui-tabs-anchor{
+      padding: 8px 30px;
+    }
+    & .ui-state-default.ui-state-active{
+      background: @brand-primary;
+      border-color: @brand-primary;    
+      & a, 
+      & a:link, 
+      & a:visited {
+        color: @brand-font-color;
+        text-decoration: none;
+         outline: none;
+      }
+    }
+    & .ui-state-default{
+      background: transparent;
+      border-color: @tabs-border-color;
+      margin-right: @margin-base;
+      outline-color: transparent;
+      & a, 
+      & a:link, 
+      & a:visited {
+        color: @font-color;
+        font-weight: normal;
+        text-decoration: none;
+      }
+      &:focus, &:hover{
+        outline-color: transparent;
+      }
+    }
+  }
+  & .ui-tabs-panel{
+    padding: 16px 0;
+  }
+  
+}

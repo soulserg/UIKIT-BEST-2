@@ -1,0 +1,72 @@
+.btn {
+  display: inline-block;
+  margin-bottom: 3px; 
+  font-weight: @btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; 
+  border: none;
+  outline: 0;
+  white-space: nowrap;
+  .button-size(@padding-base-vertical+4; @padding-base-horizontal+41; @font-size-base; @line-height-base; @border-radius-base);
+  
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      .tab-focus();
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: @btn-default-color;
+    text-decoration: none;
+    outline: 0;
+    border: none;
+  }
+
+  &:active,
+  &.active {
+    border: none;
+    outline: 0;
+    background-image: none;  
+    margin-top: 3px;
+    margin-bottom: 0px;
+
+  }
+
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none; 
+    .opacity(.65);    
+  }
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+
+  }
+}
+
+.btn--default {
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-shadow);
+}
+.btn--grey{
+  .button-variant(@btn-default-color; @btn-grey-bg; @btn-grey-shadow);
+}
+.btn--orange{
+  .button-variant(@btn-default-color; @btn-orange-bg; @btn-orange-shadow);
+}
+.btn--small{
+  .button-size(@padding-base-vertical; @padding-base-horizontal*2; @font-size-base; @line-height-base; @border-radius-base);
+}

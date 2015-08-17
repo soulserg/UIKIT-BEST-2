@@ -1,0 +1,109 @@
+.img-rounded{
+  border-radius: @border-radius-base;
+}
+.img--small{
+    max-width: @img-small-width;
+}
+.zoom-image{
+    display: block;
+    position: relative;
+    &:hover{
+        &:after{            
+            content: "";
+            display: block;
+            position: absolute;       
+            background: @sprite-path 0 0 no-repeat;       
+            left: 50%;
+            margin-left: -18px;
+            margin-top: -17px;
+            top: 50%;
+            width: 35px;
+            height: 36px;
+        }
+        &:before{
+            border-radius: @border-radius-base;
+            content: "";
+            display: block;
+            position: absolute;       
+            background: @image-caption-bg;       
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & img{
+        display: block;
+    }
+}
+.image-caption{
+    position: relative;
+    margin: 0;
+    & img{
+        display: block;
+    }
+    & .image-caption__text{
+        background: @image-caption-bg;
+        color: @image-caption-color;
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+        opacity: 0;
+    }
+    &:hover .image-caption__text{
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+
+
+img{
+    border-radius: 5px ;
+
+}
+
+
+
+#f1_container {
+  position: relative;
+  width: 258px;
+  height: 258px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+      border: 1px solid #D8DADC  ;
+  border-radius: 5px;   
+  width: 258px;
+  height: 258px;
+  display: block;
+  margin-left: -30px;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+}
+

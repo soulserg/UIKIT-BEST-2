@@ -1,0 +1,149 @@
+/***************************
+*********Checkbox***********
+***************************/
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) 
+{
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+// .label-checkbox
+//   {
+//     display: block;
+//     padding: 5px;
+//     position: relative;
+//   }
+
+// input[type="checkbox"],
+// input[type="radio"] {
+//     display:none;            
+// }
+
+.checkbox-custom + label, 
+.radio_type_one + label,
+.switch + label
+{
+  font: 16px bold;
+  color: #444;
+  cursor: pointer;
+}
+.checkbox-custom + label::before,
+.radio_type_one + label::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px 0 0;
+    background-image: url(../img/checkbox/spritesheet.png);
+    background-repeat: no-repeat;
+}
+
+.checkbox-custom:disabled+ label::before {
+    .stitches-sprite(-57px, -5px, 16px, 16px);
+}
+
+.checkbox-custom + label::before {
+    .stitches-sprite(-5px, -5px, 16px, 16px);  
+}
+
+.checkbox-custom:checked + label::before {
+     .stitches-sprite(-31px, -5px, 16px, 16px);
+}
+
+.radio_type_one:disabled + label::before {
+     .stitches-sprite(-135px, -5px, 16px, 16px);
+}
+
+.radio_type_one:checked + label::before {
+     .stitches-sprite(-109px, -5px, 16px, 16px);
+}
+.radio_type_one + label::before {
+      .stitches-sprite(-83px, -5px, 16px, 16px);
+}
+
+.switch + label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    height: 16px;
+    width: 30px;
+    left: 0;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+    background-color: @grey-checkbox;
+    background-repeat: no-repeat;
+}
+
+.switch + label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  height: 14px;
+  width: 14px;
+  left: 0;
+  border-radius: 10px;
+  margin: 0 5px 0 0;
+  border: 1px solid @grey-checkbox;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+.switch:checked + label::before {    
+    background-color: @green-color;   
+}
+
+.switch:checked + label::after {  
+  left: 14px;  
+}
+
+.switch +label{
+  margin-left: 35px;
+}
+
+.switch:disabled + label::after {
+     background-color: @grey-disabled;
+}
+
+input[disabled="disabled"] + .label-checkbox__disabled{
+    color:@grey-checkbox;
+}
+
+
+
+
+/*Checkbox_adv*/
+.switch
+{
+  border: 2px solid @carrot-color;
+  border-radius: 4px;
+  display: table;  
+  font-size: 0; 
+  margin: 0 auto;
+
+  &--input + label
+  {
+    background-color:#fff ;
+    color:@carrot-color;
+  }
+
+  &--input:checked + label
+  {
+    background-color: @carrot-color;
+    color:#fff;
+  }
+  
+  &--label
+  {
+    background-color: #fff;
+    padding: 7px;   
+    color: @carrot-color;
+    display: table-cell;  
+    font-size: 14px;
+    cursor: pointer;
+  }
+} 

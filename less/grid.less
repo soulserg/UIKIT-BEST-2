@@ -1,0 +1,21 @@
+.row{
+  margin-left: @grid-padding/(-2);
+  margin-right: @grid-padding/(-2);
+  &:after{
+    clear: both;
+	display: table;
+	content: "";
+  }
+  [class*="col-"]{
+    float: left;
+    padding: @grid-padding/2;
+    position: relative;
+    min-height: 1px;
+  }
+  .generate-columns(12);
+}
+
+.grid-color{
+  background-color:#B3D4F9;
+  height: 34px;
+}

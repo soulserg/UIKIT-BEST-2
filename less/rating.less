@@ -1,0 +1,17 @@
+.star-rating {
+  & .star{
+  	background: @sprite-path no-repeat 0 -611px;
+  	cursor: pointer;
+  	display: inline-block;
+  	width: 16px; 
+  	height: 16px;
+  	vertical-align: text-top;
+  	&.star-active{
+  		background-position: 0 -636px;
+  	}
+  }
+  & label{
+  	line-height: 16px;
+  	margin-right: 5px;
+  }
+}

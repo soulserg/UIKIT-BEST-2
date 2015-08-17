@@ -1,0 +1,53 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container{
+  margin: 0 auto;
+  width: @container-width;
+}
+body{
+  background-color: @body-bg;
+  color: #3f3f3f;
+  font-size: @font-size-base;
+  font-family: @font-family-base;
+  line-height: @line-height-base;
+}
+.relative{
+  position: relative;
+}
+.block--rounded{
+  background: @block-rounded-bg;
+  border-radius: @border-radius-base;
+  margin-bottom: @margin-base;
+  padding: 20px;
+  
+}
+.block--inline{
+  display: inline-block;
+}
+.quotation{
+  color: @brand-primary;
+  font-style: italic;
+}
+.block--square{
+  height: @block-square-height;
+  overflow: hidden;
+}
+.ribbon{
+  background: @red-ribbon;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 12px;
+  height: 12px;
+  width: 80px;
+  transform: rotate(-45deg);
+}
+.ribbon--yellow{
+  background: @yellow-ribbon;
+}
+.ribbon--green{
+  background: @green-ribbon;
+}
